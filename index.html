@@ -24,30 +24,30 @@
         <div class="password-gen-card d-flex">
             <h3>Password Generator</h3>
             <div class="password-box">
-                <h2>P4$5W0RD!</h2>
+                <h2 id="password-display">P4$5W0RD!</h2>
             </div>
             <div class="inclusions">
                 <form action="" class="password-gen-form d-flex">
                     <div class="char-length d-flex">
                         <h4>Character Length:</h4>
-                        <h2>0</h2>
+                        <h2 id="slider-value"></h2>
                     </div>
-                    <input type="range" name="" id="" class="slider" value="0">
+                    <input type="range" name="" id="char-len-slider" class="slider" value="4" min="4" max="16">
                     <div class="checkboxes">
                         <div class="d-flex" style="width: 100%;">
-                            <input type="checkbox" name="" id="" class="inclusion-check">
+                            <input type="checkbox" name="" id="uppercase" class="inclusion-check">
                             <label for="" style="margin-left: 5%; font-weight: 600;">Include Uppercase Letters</label>
                         </div>
                         <div class="d-flex" style="width: 100%;">
-                            <input type="checkbox" name="" id="" class="inclusion-check">
+                            <input type="checkbox" name="" id="lowercase" class="inclusion-check">
                             <label for="" style="margin-left: 5%; font-weight: 600;">Include Lowercase Letters</label>
                         </div>
                         <div class="d-flex" style="width: 100%;">
-                            <input type="checkbox" name="" id="" class="inclusion-check">
+                            <input type="checkbox" name="" id="numbers" class="inclusion-check">
                             <label for="" style="margin-left: 5%; font-weight: 600;">Include Numbers</label>
                         </div>
                         <div class="d-flex" style="width: 100%;">
-                            <input type="checkbox" name="" id="" class="inclusion-check">
+                            <input type="checkbox" name="" id="symbols" class="inclusion-check">
                             <label for="" style="margin-left: 5%; font-weight: 600;">Include Symbols</label>
                         </div>
                     </div>
@@ -58,11 +58,13 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <button class="generate-btn">GENERATE</button>
+                    <button class="generate-btn" id="generate-btn" type="button">GENERATE</button>
                 </form>
             </div>
         </div>
     </main>
+
+    <script src="main.js"></script>
 
 </body>
 

@@ -126,6 +126,7 @@ main {
     height: 18px;
     border: 1px solid #ffffff;
     background: none;
+    cursor: pointer;
 }
 
 .strength-indicator {
@@ -149,4 +150,10 @@ main {
     height: 15%;
     background-color: #a7ffab;
     border: none;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #7bff82;
+    transition: 0.15s ease-in-out;
 }
